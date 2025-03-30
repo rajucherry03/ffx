@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaTwitter, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -36,10 +37,27 @@ function Footer() {
           {/* Contact & Social Media */}
           <div className="w-full md:w-1/4">
             <h4 className="text-lg font-semibold mb-3">Follow Us</h4>
-            <ul>
-              <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-accent">Twitter</a></li>
-              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-accent">LinkedIn</a></li>
-              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-accent">GitHub</a></li>
+            <ul className="flex space-x-4 justify-center md:justify-start">
+              <li>
+                <a href="https://x.com/FutureForgeX" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-accent transition-transform transform hover:scale-110">
+                  <FaTwitter size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/futureforgex/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-accent transition-transform transform hover:scale-110">
+                  <FaLinkedin size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/futureforgex" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-accent transition-transform transform hover:scale-110">
+                  <FaGithub size={24} />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/futureforgex.pvt/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-accent transition-transform transform hover:scale-110">
+                  <FaInstagram size={24} />
+                </a>
+              </li>
             </ul>
           </div>
         </div>

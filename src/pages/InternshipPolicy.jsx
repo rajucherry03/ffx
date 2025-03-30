@@ -1,99 +1,70 @@
-import React from 'react';
+import React from "react";
 
-function InternshipPolicy() {
+const InternshipPolicy = () => {
   return (
     <div className="max-w-4xl mx-auto p-6 text-gray-800">
-      <h1 className="text-3xl font-bold mb-6">Internship Policy</h1>
-      <p className="mb-4">
-        FutureForgeX offers structured internships and courses designed to enhance learning, skill development, and career growth in the field of software development. Our programs are tailored to provide hands-on experience and professional exposure to students and aspiring professionals.
+      <h1 className="text-3xl font-semibold mb-6 text-center">FUTUREFORGEX INTERNSHIP POLICY</h1>
+      
+      <h2 className="text-xl font-semibold mt-6 mb-3">INTRODUCTION</h2>
+      <p className="mb-4 text-justify">
+        FutureForgeX offers structured internships and courses designed to enhance learning, skill development, and career growth in software development. Our programs provide hands-on experience and professional exposure to students and aspiring professionals.
       </p>
-
-      <h2 className="text-2xl font-semibold mt-6">1. Eligibility</h2>
-      <p className="mb-4">
-        Our internships and courses are open to:
-      </p>
+      
+      <h2 className="text-xl font-semibold mt-6 mb-3">ELIGIBILITY</h2>
       <ul className="list-disc ml-6 mb-4">
         <li>Students currently enrolled in a recognized university or college in a relevant field (e.g., Computer Science, Information Technology, Engineering).</li>
         <li>Recent graduates seeking practical experience in software development.</li>
         <li>Professionals looking to upskill or transition into software-related roles.</li>
       </ul>
-      <p className="mb-4">
-        Specific prerequisites may apply depending on the internship or course. Please refer to individual program descriptions for detailed eligibility criteria.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-6">2. Application Process</h2>
-      <p className="mb-4">
-        To apply for an internship or course:
-      </p>
+      <p className="mb-4">Specific prerequisites may apply depending on the internship or course.</p>
+      
+      <h2 className="text-xl font-semibold mt-6 mb-3">APPLICATION PROCESS</h2>
       <ul className="list-disc ml-6 mb-4">
         <li>Submit an online application through the FutureForgeX website.</li>
         <li>Provide a resume, academic transcripts, and any required portfolios or project samples.</li>
         <li>Participate in an interview or assessment, if shortlisted.</li>
       </ul>
-      <p className="mb-4">
-        Applications are reviewed on a rolling basis, and selected candidates will be notified via email.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-6">3. Stipend & Certification</h2>
-      <p className="mb-4">
-        FutureForgeX offers both paid and unpaid internships:
-      </p>
+      <p className="mb-4">Applications are reviewed on a rolling basis, and selected candidates will be notified via email.</p>
+      
+      <h2 className="text-xl font-semibold mt-6 mb-3">STIPEND & CERTIFICATION</h2>
       <ul className="list-disc ml-6 mb-4">
         <li><strong>Paid Internships:</strong> Select internships provide a stipend based on the role, duration, and performance.</li>
-        <li><strong>Unpaid Internships:</strong> These focus on skill development and offer a certificate of completion upon successful fulfillment of program requirements.</li>
+        <li><strong>Unpaid Internships:</strong> Focus on skill development and offer a certificate upon successful completion.</li>
       </ul>
-      <p className="mb-4">
-        All interns and course participants who meet the program’s objectives will receive a certificate of completion, which can be used to demonstrate skills and experience to future employers.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-6">4. Code of Conduct</h2>
-      <p className="mb-4">
-        Interns and course participants are expected to:
-      </p>
+      <p className="mb-4">All interns who meet the program’s objectives will receive a certificate of completion.</p>
+      
+      <h2 className="text-xl font-semibold mt-6 mb-3">CODE OF CONDUCT</h2>
       <ul className="list-disc ml-6 mb-4">
         <li>Adhere to FutureForgeX’s professional standards and workplace etiquette.</li>
         <li>Respect confidentiality and intellectual property agreements.</li>
         <li>Complete assigned tasks and projects within deadlines.</li>
-        <li>Participate actively in training sessions, workshops, and team meetings.</li>
-        <li>Maintain a collaborative and respectful attitude towards mentors, peers, and staff.</li>
+        <li>Participate actively in training sessions and team meetings.</li>
+        <li>Maintain a respectful attitude towards mentors, peers, and staff.</li>
       </ul>
-      <p className="mb-4">
-        Failure to comply with the code of conduct may result in disciplinary action, including termination of the internship or course enrollment.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-6">5. Intellectual Property</h2>
-      <p className="mb-4">
-        Any work, software, code, or projects developed during the internship or course remain the intellectual property of FutureForgeX, unless otherwise agreed in writing. Interns and participants may be credited for their contributions but do not retain ownership rights.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-6">6. Confidentiality</h2>
-      <p className="mb-4">
-        Interns and course participants may have access to sensitive information, including proprietary software, client data, and internal processes. All participants are required to sign a confidentiality agreement to protect this information during and after the program.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-6">7. Termination</h2>
-      <p className="mb-4">
-        FutureForgeX reserves the right to terminate an internship or course enrollment if:
-      </p>
+      
+      <h2 className="text-xl font-semibold mt-6 mb-3">INTELLECTUAL PROPERTY</h2>
+      <p className="mb-4">Any work, software, or projects developed during the internship remain the intellectual property of FutureForgeX unless otherwise agreed in writing.</p>
+      
+      <h2 className="text-xl font-semibold mt-6 mb-3">CONFIDENTIALITY</h2>
+      <p className="mb-4">Interns may have access to sensitive information. All participants must sign a confidentiality agreement to protect this information during and after the program.</p>
+      
+      <h2 className="text-xl font-semibold mt-6 mb-3">TERMINATION</h2>
+      <p className="mb-4">FutureForgeX reserves the right to terminate an internship if:</p>
       <ul className="list-disc ml-6 mb-4">
         <li>The participant violates the code of conduct or confidentiality agreements.</li>
-        <li>The participant fails to meet performance expectations or complete assigned tasks.</li>
+        <li>The participant fails to meet performance expectations.</li>
         <li>The participant engages in unethical or unprofessional behavior.</li>
       </ul>
-      <p className="mb-4">
-        Participants may also voluntarily withdraw from the program by providing written notice to FutureForgeX.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-6">8. Contact Us</h2>
-      <p className="mb-4">
-        For inquiries about internships, courses, or academy policies, please contact us at:
-      </p>
-      <ul className="list-disc ml-6 mb-4">
-        <li><strong>Email:</strong> internships@futureforgex.com</li>
-        <li><strong>Phone:</strong> +91 8499956365</li>
-      </ul>
+      <p className="mb-4">Participants may voluntarily withdraw by providing written notice.</p>
+      
+      <h2 className="text-xl font-semibold mt-6 mb-3">CONTACT US</h2>
+      <p className="mb-2">For inquiries about internships, please contact us at:</p>
+      <p className="mb-4">Email: <a href="mailto:internships@futureforgex.com" className="underline">internships@futureforgex.com</a></p>
+      <p className="mb-4">Phone: <a href="tel:+918499956365" className="underline">+91 8499956365</a></p>
+      <p className="mb-4">Website: <a href="https://www.futureforgex.in" className="underline" target="_blank" rel="noopener noreferrer">www.futureforgex.in</a></p>
+      <p className="mb-4">Address: Madanapalle</p>
     </div>
   );
-}
+};
 
 export default InternshipPolicy;
