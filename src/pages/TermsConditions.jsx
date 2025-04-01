@@ -35,13 +35,13 @@ function TermsConditions() {
       
       <h2 className="text-xl font-semibold mt-6 mb-3">RETURN POLICY</h2>
       <h3 className="text-lg font-semibold mt-4">Eligibility</h3>
-      <p>Returns are accepted within 5-7 days of receipt if the product is unused and in original packaging. Customized products are non-returnable.</p>
+      <p>Returns are accepted within 7-14 days of receipt if the product is unused and in original packaging. Customized products are non-returnable.</p>
       
       <h3 className="text-lg font-semibold mt-4">Return Process</h3>
       <p>Contact us at <a href="mailto:support@futureforgex.com" className="underline">support @ futureforgex . com</a> for return instructions. Return shipping costs apply unless the item is defective or incorrect.</p>
       
       <h3 className="text-lg font-semibold mt-4">Refunds</h3>
-      <p>Refunds will be processed within 5-7 business days after receiving the returned item. Refunds are issued to the original payment method.</p>
+      <p>Refunds will be processed within 7-14 business days after receiving the returned item. Refunds are issued to the original payment method.</p>
       
       <h2 className="text-xl font-semibold mt-6 mb-3">INTELLECTUAL PROPERTY</h2>
       <p>All content, logos, and materials on FutureForgeX are protected under intellectual property laws. Unauthorized use or distribution is prohibited.</p>

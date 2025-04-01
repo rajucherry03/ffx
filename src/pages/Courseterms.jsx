@@ -30,7 +30,7 @@ const CourseTerms = () => {
       
       <h2 className="text-xl font-semibold mt-6 mb-3">CANCELLATION & REFUND POLICY</h2>
       <p className="mb-4">
-        Cancellations made at least [number, e.g., 7] days before the Course start date are eligible for a full refund. Late cancellations may be subject to a fee or no refund.
+        Cancellations made at least 7 days before the Course start date are eligible for a full refund. Late cancellations may be subject to a fee or no refund.
       </p>
       <p className="mb-4">
         FutureForgeX reserves the right to cancel a Course due to unforeseen circumstances, with a full refund or transfer option.

@@ -14,7 +14,7 @@ function RefundPolicy() {
       <ul className="list-disc ml-6 mb-4">
         <li>Full refund if cancellation occurs before work begins.</li>
         <li>Prorated refund if work has started, with a possible cancellation fee.</li>
-        <li>A minimum of 5 business days’ notice is required.</li>
+        <li>A minimum of 7 business days’ notice is required.</li>
       </ul>
       
       <h3 className="text-lg font-semibold mt-4">Internships and Courses</h3>
@@ -22,7 +22,7 @@ function RefundPolicy() {
       <ul className="list-disc ml-6 mb-4">
         <li>Full refund if canceled before the program begins.</li>
         <li>Prorated refund after the start date, subject to a cancellation fee.</li>
-        <li>A minimum of 3 business days’ notice is required.</li>
+        <li>A minimum of 7 business days’ notice is required.</li>
       </ul>
       
       <h2 className="text-xl font-semibold mt-6 mb-3">RETURNS POLICY</h2>
@@ -37,14 +37,14 @@ function RefundPolicy() {
       
       <h3 className="text-lg font-semibold mt-4">Internships and Courses</h3>
       <ul className="list-disc ml-6 mb-4">
-        <li>Report dissatisfaction within 5 days of the start date.</li>
+        <li>Report dissatisfaction within 7-14 days of the start date.</li>
         <li>We may offer a course transfer or partial refund.</li>
       </ul>
       
       <h2 className="text-xl font-semibold mt-6 mb-3">REFUND PROCESS</h2>
       <ul className="list-disc ml-6 mb-4">
         <li>Submit a refund request to <a href="mailto:futureforgex.pvt@gmail.com" className="underline">futureforgex.pvt@gmail.com</a> with details.</li>
-        <li>Requests are reviewed within 5 business days.</li>
+        <li>Requests are reviewed within 7-14 business days.</li>
         <li>Approved refunds are processed within 10 business days.</li>
       </ul>
       
