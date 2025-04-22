@@ -10,15 +10,18 @@ const CourseTerms = () => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header with logo */}
-      <div className="bg-purple-700 w-full h-[150px] flex items-center justify-center rounded-b-lg">
+ <div
+        className="w-full h-[90px] flex items-center justify-center rounded-b-lg"
+        style={{ backgroundColor: "#07064E" }}
+      >
         <img
           src={logo}
           alt="FutureForgeX"
           style={{
-            height: "auto",  // Maintain aspect ratio for the height
-            width: "150px",  // Adjust the width of the logo to fit inside the header
-            borderRadius: "15px",  // Rounded corners for the logo
-            objectFit: "cover",    // Ensures the image fits nicely within the given dimensions
+            height: "auto",        // Maintain aspect ratio
+            width: "150px",        // Adjust logo size
+            borderRadius: "15px",  // Rounded corners
+            objectFit: "cover",    // Fit image nicely
           }}
         />
       </div>

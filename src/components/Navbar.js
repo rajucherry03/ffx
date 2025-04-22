@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import logo from "../assets/Xbackdemo.png"; // Updated logo path
+import logo from "../assets/Xbackdemo.png"; // your logo path
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,27 +46,35 @@ function Navbar() {
     }
   };
 
-  const menuItems = ["Home", "About", "Internships", "Services", "Projects", "Contact"];
+  const menuItems = [
+    "Home",
+    "About",
+    "Internships",
+    "Services",
+    "Projects",
+    "Contact",
+  ];
 
   return (
     <nav className="fixed w-full top-0 z-20">
       <div
-        className="bg-dark-blue/20 backdrop-blur-lg border-b-2"
+        className="border-b-2"
         style={{
+          backgroundColor: "#07064E",
           borderImage: "linear-gradient(to right, #00D4FF, #A855F7) 1",
         }}
       >
-        <div className="container mx-auto flex justify-between items-center p-4">
+        <div className="container mx-auto h-[64px] flex justify-between items-center px-4">
           {/* Logo */}
           <motion.img
             src={logo}
             alt="FutureForgeX"
             style={{
-              height: "50px",
-              width: "100px",
-              borderRadius: "25px",
+              height: "70px",
+              width: "auto",
+              maxHeight: "100%",
             }}
-            className="hover:shadow-cyan-accent/50 transition-shadow duration-300"
+            className="hover:shadow-cyan-accent/50 transition-shadow duration-300 object-contain"
             variants={logoVariants}
             initial="hidden"
             animate="visible"
@@ -93,7 +101,7 @@ function Navbar() {
             ))}
           </ul>
 
-          {/* Mobile Menu Toggle */}
+          {/* Mobile Toggle */}
           <motion.button
             className="md:hidden text-white focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
@@ -111,7 +119,11 @@ function Navbar() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+                d={
+                  isOpen
+                    ? "M6 18L18 6M6 6l12 12"
+                    : "M4 6h16M4 12h16M4 18h16"
+                }
               />
             </svg>
           </motion.button>
@@ -120,7 +132,7 @@ function Navbar() {
         {/* Mobile Menu */}
         {isOpen && (
           <motion.ul
-            className="md:hidden flex flex-col space-y-4 text-center bg-dark-blue/20 backdrop-blur-lg"
+            className="md:hidden flex flex-col space-y-4 text-center bg-[#07064E] px-4 py-4"
             variants={mobileMenuVariants}
             initial="hidden"
             animate="visible"

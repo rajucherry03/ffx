@@ -8,18 +8,21 @@ function TermsConditions() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <div className="bg-purple-700 w-full h-[150px] flex items-center justify-center rounded-b-lg">
-        <img
-          src={logo}
-          alt="FutureForgeX"
-          style={{
-            height: "auto",
-            width: "150px",
-            borderRadius: "15px",
-            objectFit: "cover",
-          }}
-        />
-      </div>
+     <div
+            className="w-full h-[90px] flex items-center justify-center rounded-b-lg"
+            style={{ backgroundColor: "#07064E" }}
+          >
+            <img
+              src={logo}
+              alt="FutureForgeX"
+              style={{
+                height: "auto",        // Maintain aspect ratio
+                width: "150px",        // Adjust logo size
+                borderRadius: "15px",  // Rounded corners
+                objectFit: "cover",    // Fit image nicely
+              }}
+            />
+          </div>
 
       <div className="max-w-4xl mx-auto p-6 text-gray-800">
         <h1 className="text-3xl font-semibold mb-6 text-center">FUTUREFORGEX TERMS & CONDITIONS</h1>
