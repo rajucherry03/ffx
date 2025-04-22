@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Internships from './components/Internships'; // ✅ Added
 import Services from './components/Services';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
@@ -11,7 +12,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
 import RefundPolicy from './pages/RefundPolicy';
 import InternshipPolicy from './pages/InternshipPolicy';
-import CourseTerms from './pages/Courseterms'; // New import for CourseTerms
+import CourseTerms from './pages/Courseterms';
 import PlainLayout from './layout/PlainLayout';
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
               <Navbar />
               <Hero />
               <About />
+
+              <Internships /> {/* ✅ Internships added here */}
+
               <Services />
               <Projects />
               <Contact />
@@ -36,7 +40,7 @@ function App() {
         <Route path="/terms-conditions" element={<PlainLayout><TermsConditions /></PlainLayout>} />
         <Route path="/refund-policy" element={<PlainLayout><RefundPolicy /></PlainLayout>} />
         <Route path="/internship-policy" element={<PlainLayout><InternshipPolicy /></PlainLayout>} />
-        <Route path="/course-terms" element={<PlainLayout><CourseTerms /></PlainLayout>} /> {/* New route */}
+        <Route path="/course-terms" element={<PlainLayout><CourseTerms /></PlainLayout>} />
       </Routes>
     </Router>
   );

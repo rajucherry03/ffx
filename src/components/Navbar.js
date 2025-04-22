@@ -46,6 +46,8 @@ function Navbar() {
     }
   };
 
+  const menuItems = ["Home", "About", "Internships", "Services", "Projects", "Contact"];
+
   return (
     <nav className="fixed w-full top-0 z-20">
       <div
@@ -55,14 +57,14 @@ function Navbar() {
         }}
       >
         <div className="container mx-auto flex justify-between items-center p-4">
-          {/* Logo with manual pixel width/height and rounded corners */}
+          {/* Logo */}
           <motion.img
             src={logo}
             alt="FutureForgeX"
             style={{
               height: "50px",
               width: "100px",
-              borderRadius: "25px", // Rounded corners
+              borderRadius: "25px",
             }}
             className="hover:shadow-cyan-accent/50 transition-shadow duration-300"
             variants={logoVariants}
@@ -72,28 +74,26 @@ function Navbar() {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-6">
-            {["Home", "About", "Services", "Projects", "Contact"].map(
-              (item, index) => (
-                <motion.li
-                  key={item}
-                  variants={linkVariants}
-                  initial="hidden"
-                  animate="visible"
-                  custom={index}
+            {menuItems.map((item, index) => (
+              <motion.li
+                key={item}
+                variants={linkVariants}
+                initial="hidden"
+                animate="visible"
+                custom={index}
+              >
+                <a
+                  href={`#${item.toLowerCase()}`}
+                  className="relative text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-accent hover:to-purple-accent transition-all duration-300"
                 >
-                  <a
-                    href={`#${item.toLowerCase()}`}
-                    className="relative text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-accent hover:to-purple-accent transition-all duration-300"
-                  >
-                    {item}
-                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-cyan-accent to-purple-accent transition-all duration-300 hover:w-full" />
-                  </a>
-                </motion.li>
-              )
-            )}
+                  {item}
+                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-cyan-accent to-purple-accent transition-all duration-300 hover:w-full" />
+                </a>
+              </motion.li>
+            ))}
           </ul>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Toggle */}
           <motion.button
             className="md:hidden text-white focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
@@ -125,7 +125,7 @@ function Navbar() {
             initial="hidden"
             animate="visible"
           >
-            {["Home", "About", "Services", "Projects", "Contact"].map((item) => (
+            {menuItems.map((item) => (
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase()}`}

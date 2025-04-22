@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaTwitter, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 
 function Footer() {
@@ -11,7 +12,7 @@ function Footer() {
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h4 className="text-lg font-semibold mb-3">Company</h4>
             <ul>
-              <li><a href="/about" className="hover:text-cyan-accent">About Us</a></li>
+              <li><Link to="/about" className="hover:text-cyan-accent">About Us</Link></li>
             </ul>
           </div>
 
@@ -19,10 +20,10 @@ function Footer() {
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h4 className="text-lg font-semibold mb-3">Policies</h4>
             <ul>
-              <li><a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-accent">Privacy Policy</a></li>
-              <li><a href="/terms-conditions" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-accent">Terms & Conditions</a></li>
-              <li><a href="/refund-policy" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-accent">Refund & Cancellation</a></li>
-              <li><a href="/internship-policy" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-accent">Internship Policy</a></li>
+              <li><Link to="/privacy-policy" className="hover:text-cyan-accent">Privacy Policy</Link></li>
+              <li><Link to="/terms-conditions" className="hover:text-cyan-accent">Terms & Conditions</Link></li>
+              <li><Link to="/refund-policy" className="hover:text-cyan-accent">Refund & Cancellation</Link></li>
+              <li><Link to="/internship-policy" className="hover:text-cyan-accent">Internship Policy</Link></li>
             </ul>
           </div>
 
@@ -30,7 +31,7 @@ function Footer() {
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h4 className="text-lg font-semibold mb-3">Education & Training</h4>
             <ul>
-              <li><a href="/course-terms" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-accent">Course Terms</a></li>
+              <li><Link to="/course-terms" className="hover:text-cyan-accent">Course Terms</Link></li>
             </ul>
           </div>
 
