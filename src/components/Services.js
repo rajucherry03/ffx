@@ -1,6 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaCode, FaGlobe, FaTools, FaMobileAlt, FaDraftingCompass, FaChalkboardTeacher } from "react-icons/fa";
+import {
+  FaCode,
+  FaGlobe,
+  FaTools,
+  FaMobileAlt,
+  FaDraftingCompass,
+  FaChalkboardTeacher,
+} from "react-icons/fa";
 
 function Services() {
   const cardVariants = {
@@ -14,39 +21,54 @@ function Services() {
 
   const services = [
     {
-      icon: <FaCode className="text-3xl text-cyan-accent" />, 
-      title: "Custom Software Development", 
-      description: "We build tailor-made software solutions that meet your business needs. Our expertise spans web applications, enterprise software, automation tools, and scalable cloud-based platforms."
+      icon: <FaCode className="text-3xl text-cyan-accent" />,
+      title: "Custom Software Development",
+      description:
+        "We build tailor-made software solutions that meet your business needs. Our expertise spans web applications, enterprise software, automation tools, and scalable cloud-based platforms.",
+      price: "Starts at ₹25,000 to ₹5,00,000",
     },
     {
-      icon: <FaGlobe className="text-3xl text-cyan-accent" />, 
-      title: "Web Apps & Corporate Systems", 
-      description: "We specialize in developing advanced web solutions for businesses, including ERP systems, customer portals, and AI-powered platforms, ensuring seamless automation and efficiency."
+      icon: <FaGlobe className="text-3xl text-cyan-accent" />,
+      title: "Web Apps & Corporate Systems",
+      description:
+        "We specialize in developing advanced web solutions for businesses, including ERP systems, customer portals, and AI-powered platforms, ensuring seamless automation and efficiency.",
+      price: "Starts at ₹25,000 to ₹3,50,000",
     },
     {
-      icon: <FaTools className="text-3xl text-cyan-accent" />, 
-      title: "Maintenance & Support", 
-      description: "Our team ensures continuous software updates, security enhancements, and performance optimizations to keep your applications running smoothly without disruptions."
+      icon: <FaTools className="text-3xl text-cyan-accent" />,
+      title: "Maintenance & Support",
+      description:
+        "Our team ensures continuous software updates, security enhancements, and performance optimizations to keep your applications running smoothly without disruptions.",
+      price: "Starts at ₹10,000/month",
     },
     {
-      icon: <FaMobileAlt className="text-3xl text-cyan-accent" />, 
-      title: "Mobile Application Development", 
-      description: "We create high-performance mobile applications for both iOS and Android platforms. Our solutions range from e-commerce apps to on-demand service platforms and enterprise mobility solutions."
+      icon: <FaMobileAlt className="text-3xl text-cyan-accent" />,
+      title: "Mobile Application Development",
+      description:
+        "We create high-performance mobile applications for both iOS and Android platforms. Our solutions range from e-commerce apps to on-demand service platforms and enterprise mobility solutions.",
+      price: "Starts at ₹60,000 to ₹4,00,000",
     },
     {
-      icon: <FaDraftingCompass className="text-3xl text-cyan-accent" />, 
-      title: "Software Prototyping", 
-      description: "We develop interactive prototypes that help validate ideas before full-scale development. This approach ensures product refinement and better user experience based on feedback."
+      icon: <FaDraftingCompass className="text-3xl text-cyan-accent" />,
+      title: "Software Prototyping",
+      description:
+        "We develop interactive prototypes that help validate ideas before full-scale development. This approach ensures product refinement and better user experience based on feedback.",
+      price: "Starts at ₹15,000 to ₹1,00,000",
     },
     {
-      icon: <FaChalkboardTeacher className="text-3xl text-cyan-accent" />, 
-      title: "Internships & Online Courses", 
-      description: "We offer hands-on internships and online courses in various domains, including AI/ML, Web Development, Cybersecurity, and more, providing real-world project experience to learners."
+      icon: <FaChalkboardTeacher className="text-3xl text-cyan-accent" />,
+      title: "Internships & Online Courses",
+      description:
+        "We offer hands-on internships and online courses in various domains, including AI/ML, Web Development, Cybersecurity, and more, providing real-world project experience to learners.",
+      price: "Starts at ₹999 to ₹9,999",
     },
   ];
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-b from-gray-100 to-gray-200">
+    <section
+      id="services"
+      className="py-20 bg-gradient-to-b from-gray-100 to-gray-200"
+    >
       <div className="container mx-auto text-center">
         <motion.h2
           className="text-4xl font-bold mb-12 text-dark-blue"
@@ -62,7 +84,7 @@ function Services() {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="relative p-6 bg-white text-dark-blue shadow-lg rounded-lg overflow-hidden"
+              className="relative p-6 bg-white text-dark-blue shadow-lg rounded-lg overflow-hidden flex flex-col"
               variants={cardVariants}
               initial="hidden"
               whileInView="visible"
@@ -70,11 +92,16 @@ function Services() {
               whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-accent to-purple-accent"></div>
-              <div className="flex justify-center mb-4 mt-4">
-                {service.icon}
-              </div>
-              <h3 className="text-xl font-semibold mb-4 text-dark-blue">{service.title}</h3>
-              <p className="mb-4 text-gray-600 leading-relaxed">{service.description}</p>
+              <div className="flex justify-center mb-4 mt-4">{service.icon}</div>
+              <h3 className="text-xl font-semibold mb-4 text-dark-blue">
+                {service.title}
+              </h3>
+              <p className="mb-2 text-gray-600 leading-relaxed">
+                {service.description}
+              </p>
+              <p className="bg-gradient-to-r from-cyan-accent to-purple-accent text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition inline-block mt-auto">
+                {service.price}
+              </p>
             </motion.div>
           ))}
         </div>
