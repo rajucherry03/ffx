@@ -12,7 +12,7 @@ function Footer() {
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h4 className="text-lg font-semibold mb-3">Company</h4>
             <ul>
-            <a href="#about" className="hover:text-cyan-accent">About Us</a>
+              <a href="#about" className="hover:text-cyan-accent">About Us</a>
             </ul>
           </div>
 
@@ -38,7 +38,7 @@ function Footer() {
           {/* Contact & Social Media */}
           <div className="w-full md:w-1/4">
             <h4 className="text-lg font-semibold mb-3">Follow Us</h4>
-            <ul className="flex space-x-4 justify-center md:justify-start">
+            <ul className="flex space-x-4 justify-center md:justify-start mb-3">
               <li>
                 <a href="https://x.com/FutureForgeX" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-accent transition-transform transform hover:scale-110">
                   <FaTwitter size={24} />
@@ -60,6 +60,8 @@ function Footer() {
                 </a>
               </li>
             </ul>
+            <p className="text-sm">📞 +91 8499 956 365</p>
+            <p className="text-sm">✉️ <a href="mailto:futureforgex.pvt@gmail.com" className="underline hover:text-cyan-accent">futureforgex@gmail.com</a></p>
           </div>
         </div>
 
