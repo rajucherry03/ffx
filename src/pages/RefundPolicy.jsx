@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import logo from "../assets/Xbackdemo.png";
+import logo from "../assets/ffxnobg.png";
 
 function RefundPolicy() {
   // Scroll to the top when the component is loaded
@@ -9,24 +9,19 @@ function RefundPolicy() {
 
   return (
     <div className="min-h-screen flex flex-col">
-       <div
-              className="w-full h-[90px] flex items-center justify-center rounded-b-lg"
-              style={{ backgroundColor: "#07064E" }}
-            >
-              <img
-                src={logo}
-                alt="FutureForgeX"
-                style={{
-                  height: "auto",        // Maintain aspect ratio
-                  width: "150px",        // Adjust logo size
-                  borderRadius: "15px",  // Rounded corners
-                  objectFit: "cover",    // Fit image nicely
-                }}
-              />
-            </div>
+       <header className="w-full h-[80px] flex items-center justify-center bg-dark-blue shadow-md">
+         <img
+           src={logo}
+           alt="FutureForgeX"
+           className="w-[140px] h-auto object-contain rounded-lg mr-4"
+         />
+         <h1 className="text-white text-xl sm:text-2xl font-semibold">
+           FUTURE FORGEX PRIVATE LIMITED
+         </h1>
+       </header>
 
       <div className="max-w-4xl mx-auto p-6 text-gray-800">
-        <h1 className="text-3xl font-semibold mb-6 text-center">FUTUREFORGEX REFUND POLICY</h1>
+        <h1 className="text-3xl font-semibold mb-6 text-center">REFUND POLICY</h1>
         <p className="mb-6 text-justify">
           At FutureForgeX, we strive to provide the best possible experience for our clients. This policy outlines the terms regarding cancellations, returns, and refunds for our services.
         </p>

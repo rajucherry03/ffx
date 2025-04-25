@@ -12,7 +12,7 @@ function Footer() {
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h4 className="text-lg font-semibold mb-3">Company</h4>
             <ul>
-              <li><Link to="/about" className="hover:text-cyan-accent">About Us</Link></li>
+            <a href="#about" className="hover:text-cyan-accent">About Us</a>
             </ul>
           </div>
 

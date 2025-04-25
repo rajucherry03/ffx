@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/Xbackdemo.png"; // Adjust the path based on your folder structure
+import logo from "../assets/ffxnobg.png"; // Adjust the path based on your folder structure
 import { useEffect } from 'react';
 
 const CourseTerms = () => {
@@ -11,26 +11,21 @@ const CourseTerms = () => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header with logo */}
-      <div
-        className="w-full h-[90px] flex items-center justify-center rounded-b-lg"
-        style={{ backgroundColor: "#07064E" }}
-      >
-        <img
-          src={logo}
-          alt="FutureForgeX"
-          style={{
-            height: "auto",        // Maintain aspect ratio
-            width: "150px",        // Adjust logo size
-            borderRadius: "15px",  // Rounded corners
-            objectFit: "cover",    // Fit image nicely
-          }}
-        />
-      </div>
+     <header className="w-full h-[80px] flex items-center justify-center bg-dark-blue shadow-md">
+       <img
+         src={logo}
+         alt="FutureForgeX"
+         className="w-[140px] h-auto object-contain rounded-lg mr-4"
+       />
+       <h1 className="text-white text-xl sm:text-2xl font-semibold">
+         FUTURE FORGEX PRIVATE LIMITED
+       </h1>
+     </header>
 
       {/* Main content area */}
       <div className="flex-1 p-6 text-gray-800 max-w-4xl mx-auto">
         <h1 className="text-3xl font-semibold mb-6 text-center">
-          FUTUREFORGEX EDUCATION & TRAINING COURSE TERMS
+          EDUCATION & TRAINING COURSE TERMS
         </h1>
 
         <h2 className="text-xl font-semibold mt-6 mb-3">INTRODUCTION</h2>

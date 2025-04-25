@@ -9,18 +9,23 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-white pt-0 px-4 sm:px-8 font-bont">
       {/* Header */}
-      <header className="w-full h-[80px] flex items-center justify-center bg-dark-blue shadow-md">
-        <img
-          src={logo}
-          alt="FutureForgeX"
-          className="w-[140px] h-auto object-contain rounded-lg"
-        />
-      </header>
+      {/* Header */}
+<header className="w-full h-[80px] flex items-center justify-center bg-dark-blue shadow-md">
+  <img
+    src={logo}
+    alt="FutureForgeX"
+    className="w-[140px] h-auto object-contain rounded-lg mr-4"
+  />
+  <h1 className="text-white text-xl sm:text-2xl font-semibold">
+    FUTURE FORGEX PRIVATE LIMITED
+  </h1>
+</header>
+
 
       {/* Policy Content */}
       <main className="max-w-5xl mx-auto mt-8 mb-10 text-gray-800">
         <h1 className="text-4xl font-bold text-center text-dark-blue mb-8 border-b-2 border-cyan-accent pb-4">
-          FUTUREFORGEX PRIVACY POLICY
+           PRIVACY POLICY
         </h1>
 
         <p className="mb-6 font-semibold italic text-sm text-gray-700 text-center">
@@ -91,7 +96,7 @@ const PrivacyPolicy = () => {
             <p className="mb-1 text-justify">Email: <a href="mailto:futureforgexsupport@gmail.com" className="text-cyan-accent underline">futureforgexsupport@gmail.com</a></p>
             <p className="mb-1 text-justify">Website: <a href="https://www.futureforgex.in" className="text-cyan-accent underline" target="_blank" rel="noopener noreferrer">www.futureforgex.in</a></p>
             <p className="mb-1 text-justify">Phone: <a href="tel:+918499956365" className="text-cyan-accent underline">+91 6301 201 156</a></p>
-            <p className="mb-4 text-justify">Address: Madanapalle</p>
+            <p className="mb-4 text-justify">Address: 14-239, Current colony, B kothakota, Chittoor-517370, Madanapalle, Andhra Pradesh </p>
           </div>
         </section>
       </main>

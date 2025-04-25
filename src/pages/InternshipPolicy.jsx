@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import logo from "../assets/Xbackdemo.png"; // Adjust path if needed
+import logo from "../assets/ffxnobg.png"; // Adjust path if needed
 
 const InternshipPolicy = () => {
   useEffect(() => {
@@ -9,25 +9,20 @@ const InternshipPolicy = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <div
-        className="w-full h-[90px] flex items-center justify-center rounded-b-lg"
-        style={{ backgroundColor: "#07064E" }}
-      >
+      <header className="w-full h-[80px] flex items-center justify-center bg-dark-blue shadow-md">
         <img
           src={logo}
           alt="FutureForgeX"
-          style={{
-            height: "auto",        // Maintain aspect ratio
-            width: "150px",        // Adjust logo size
-            borderRadius: "15px",  // Rounded corners
-            objectFit: "cover",    // Fit image nicely
-          }}
+          className="w-[140px] h-auto object-contain rounded-lg mr-4"
         />
-      </div>
+        <h1 className="text-white text-xl sm:text-2xl font-semibold">
+          FUTURE FORGEX PRIVATE LIMITED
+        </h1>
+      </header>
 
       {/* Main content area */}
       <div className="flex-1 p-6 text-gray-800">
-        <h1 className="text-3xl font-semibold mb-6 text-center">FUTUREFORGEX INTERNSHIP POLICY</h1>
+        <h1 className="text-3xl font-semibold mb-6 text-center">INTERNSHIP POLICY</h1>
         
         <h2 className="text-xl font-semibold mt-6 mb-3">INTRODUCTION</h2>
         <p className="mb-4 text-justify">

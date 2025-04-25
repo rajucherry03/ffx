@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 
 function Contact() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(null);
 
@@ -26,7 +31,7 @@ function Contact() {
 
       if (response.ok) {
         setSubmitted(true);
-        setFormData({ name: '', email: '', message: '' });
+        setFormData({ name: '', email: '', phone: '', message: '' });
       } else {
         throw new Error('Failed to submit the form. Please try again.');
       }
@@ -38,7 +43,11 @@ function Contact() {
   return (
     <section id="contact" className="py-20 bg-gray-100">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6 text-dark-blue">Contact Us</h2>
+        <h2 className="text-3xl font-bold mb-2 text-dark-blue">Contact Us</h2>
+        <p className="text-sm text-gray-600 mb-6">
+          📞 <strong>Phone Number</strong> and 📧 <strong>Email ID</strong> are mandatory.
+        </p>
+
         {submitted ? (
           <p className="text-cyan-accent mb-6">Thank you for your message! We’ll get back to you soon.</p>
         ) : error ? (
@@ -60,6 +69,15 @@ function Contact() {
               value={formData.email}
               onChange={handleChange}
               placeholder="Your Email"
+              className="w-full p-3 rounded-lg text-dark-blue border border-gray-300 focus:border-cyan-accent focus:outline-none"
+              required
+            />
+            <input
+              type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder="Your Phone Number"
               className="w-full p-3 rounded-lg text-dark-blue border border-gray-300 focus:border-cyan-accent focus:outline-none"
               required
             />
